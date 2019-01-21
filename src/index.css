@@ -79,6 +79,10 @@ body, div#root, div#root > div {
 .footer hr {
     height: 1px;
 }
+.container, .tile {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 h1.title.is-uppercase {
   padding: 1em 0;
 }
@@ -122,6 +126,11 @@ h1.title.is-uppercase {
 #home-page > .container {
     margin-top: 5vh;
     margin-bottom: 5vh;
+}
+
+/* About Page */
+#about-page .tile.is-8 article {
+  color: hsl(324,7%,95%);
 }
 
 /* Events Page */
