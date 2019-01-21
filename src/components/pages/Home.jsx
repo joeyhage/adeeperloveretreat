@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import Carousel from '../common/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
@@ -23,7 +24,7 @@ export default class Home extends React.Component {
             <div className='column'/>
             <div className='column is-two-fifths'>
               <figure className='image is-3by1'>
-                <img src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FMarriage%20Retreat%20Logo%203.png?1547356049327' alt= 'Horizontal Logo'/>
+                <img src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FMarriage%20Retreat%20Logo%203.png?1547356049327' alt='Horizontal Logo'/>
               </figure>
             </div>
             <div className='column'/>
@@ -37,7 +38,7 @@ export default class Home extends React.Component {
               </p>
             </div>
           </div>
-        <section className='section' style={{marginRight:'5vw', marginLeft:'5vw'}}>
+        <section className='section'>
           <div className='columns'>
             <div className='column'>
                 <p className='subtitle has-text-centered is-size-4' style={{color:'#6D7993'}}><FontAwesomeIcon icon={faQuoteLeft} alt='Quote Left' />&nbsp;We enjoyed taking some time for to focus on just us and not the needs
@@ -46,8 +47,8 @@ export default class Home extends React.Component {
                 </p>
                   <p className='subtitle has-text-centered is-italic is-uppercase'style={{color:'#6D7993'}}> -Jessica and Ryan </p>
             </div>
-            <div className='column is-half'>
-              <button className='button is-size-4 has-text-weight-semibold is-uppercase' style={{margin:'auto', display:'flex'}}> CHECK OUT MORE TESTIMONIALS!</button>
+            <div className='column'>
+              <Link to='/testimonials' className='button is-size-4-desktop is-size-6-touch has-text-weight-semibold is-uppercase' style={{margin:'auto', display:'flex'}}>More Testimonials!</Link>
             </div>
           </div>
           </section>
