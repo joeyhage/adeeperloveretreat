@@ -34,7 +34,7 @@ export default class ContactUs extends React.Component {
           <title>Contact Us - A Deeper Love Marriage Retreat</title>
         </Helmet>
         <div id='contactus-page' className='columns has-background-white'>
-          <div className='column is-6 is-offset-3' style={{marginBottom:'10vh'}}>
+          <div className='column is-4 is-offset-4' style={{marginBottom:'10vh'}}>
             <h1 className='title has-text-centered is-uppercase is-size-1-desktop is-size-3-touch'>
               Contact Us
             </h1>
@@ -93,17 +93,16 @@ export default class ContactUs extends React.Component {
 
     if (numErrors === 0) {
       const { name, emailAddress, phoneNumber, message } = this.state.contactInfo;
-      fetch('https://formspree.io/adeeperloveretreat@gmail.com', {
+      fetch('https://jmhage.com/api/mail/adeeperloveretreat/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          'Name': name,
-          'Email Address': emailAddress,
-          'Phone Number': phoneNumber,
-          'Message': message,
-          '_subject': 'Contact Request - A Deeper Love Marriage Retreat'
+          name,
+          emailAddress,
+          phoneNumber,
+          message
         })
       }).then(res => {
         this.setState({ submitting: false });
