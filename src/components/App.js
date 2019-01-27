@@ -19,7 +19,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/events' component={Events} />
+          <Route exact path='/registration' component={Events} />
           <Route exact path='/testimonials' component={Testimonials} />
           <Route exact path='/contact-us' component={ContactUs} />
           <Redirect to='/' />
