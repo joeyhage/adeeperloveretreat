@@ -9,7 +9,7 @@ export default class Events extends React.Component {
 				<Helmet>
 					<title>About - A Deeper Love Marriage Retreat</title>
 				</Helmet>
-        <h1 className='title has-text-centered is-uppercase is-size-1-desktop is-size-3-touch'>About the retreat</h1>
+        <h1 className='title has-text-centered is-size-1-desktop is-size-3-touch'>About the Retreat</h1>
         <div className='container'>
           <div className='tile is-ancestor'>
             <div className='tile is-vertical is-12'>
@@ -64,7 +64,7 @@ export default class Events extends React.Component {
                     </p>
                     <figure className='image is-square' style={{marginBottom:'5vh'}}>
                       <img src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FWeberFam.jpg?1546985122853' 
-                           alt='WeberFam' style={{borderRadius:'5%'}} />
+                           alt='WeberFam' style={{borderRadius:'10px'}} />
                     </figure>
                     <p > 
                       Hi, I'm Christina Weber! I'm married to Jonathan Weber. Together we have four boys #boymom and call a three acre farm, "home"

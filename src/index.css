@@ -79,12 +79,14 @@ body, div#root, div#root > div {
 .footer hr {
     height: 1px;
 }
-.container, .tile {
+.container, .tile, #events-page {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-h1.title.is-uppercase {
-  padding: 1em 0;
+h1.title.is-size-1-desktop {
+  padding: 2.5rem 0 0 0;
+  font-family: 'Allura', cursive;
+  font-size: 4.5rem !important;
 }
 #date-your-spouse {
   padding: .5em 0;
@@ -151,4 +153,7 @@ h1.title.is-uppercase {
 }
 .field:not(:first-child) {
   margin-top: 2.5rem;
+}
+article.message {
+  margin: 5vh 0;
 }

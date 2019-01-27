@@ -30,31 +30,38 @@ export default class Home extends React.Component {
             <div className='column'/>
           </div>
         </section>
+      <div style={{backgroundColor: 'hsl(221, 15%, 85%)', padding:'9vh 0'}}>
         <section className='section'>
-                    <div className='container' style={{backgroundColor:'#96858F', padding:'1em', borderRadius:'4px'}}>
-            <div style={{backgroundColor:'#D5D5D5', padding:'.8em'}}>
-              <p className='title has-text-centered is-uppercase is-size-3-desktop is-size-5-touch'>
+                    <div className='container' style={{backgroundColor:'#6D7993', padding:'1em', borderRadius:'10px'}}>
+            <div style={{padding:'.8em'}}>
+              <p className='title has-text-centered is-uppercase is-size-3-desktop is-size-5-touch has-text-white-bis'>
                 Join us in Fall 2019 for our 3rd Annual Marriage Retreat
               </p>
             </div>
           </div>
-        <section className='section'>
-          <div className='columns'>
-            <div className='column'>
-                <p className='subtitle has-text-centered is-size-4' style={{color:'#6D7993'}}><FontAwesomeIcon icon={faQuoteLeft} alt='Quote Left' />&nbsp;We enjoyed taking some time for to focus on just us and not the needs
-                  of the kids for a day. It was also great to be surrounded by so many other faithful couples. 
-                  What a relaxing day to reconnect!&nbsp;<FontAwesomeIcon icon={faQuoteRight} alt='Quote Right' /> 
+        </section>
+        <hr style={{width:'90vw', margin:'auto', backgroundColor:'hsl(0,0%,80%)', color:'hsl(0,0%,70%)', borderStyle:'dotted'}}/>
+      <section className='section'>
+          <div className='columns is-centered'>
+            <div className='column is-two-fifths'>
+                <p className='subtitle has-text-centered is-size-4' style={{color:'#6D7993'}}>
+                  <FontAwesomeIcon icon={faQuoteLeft} alt='Quote Left' />&nbsp;
+                  It was so refreshing to reconnect with each other through prayer, fellowship, and date time. It helped us realize how important it is to find time to 
+                  focus for our marriage while raising our <span style={{whiteSpace:'nowrap'}}>children.&nbsp;
+                  <FontAwesomeIcon icon={faQuoteRight} alt='Quote Right' /></span>
                 </p>
-                  <p className='subtitle has-text-centered is-italic is-uppercase'style={{color:'#6D7993'}}> -Jessica and Ryan </p>
+                  <p className='subtitle has-text-centered is-italic is-uppercase' style={{color:'#6D7993'}}> -Jessica and Ryan </p>
             </div>
-            <div className='column'>
-              <Link to='/testimonials' className='button is-size-4-desktop is-size-6-touch has-text-weight-semibold is-uppercase' style={{margin:'auto', display:'flex'}}>More Testimonials!</Link>
+            <div className='column is-1'></div>
+            <div className='column is-one-third'>
+              <Link to='/testimonials' className='button is-size-4 has-text-weight-semibold is-uppercase' 
+                    style={{color:'#6D7993', margin:'auto', display:'flex'}}>
+                More Testimonials
+              </Link>
             </div>
           </div>
           </section>
-                  
-
-        </section>
+        </div>
         <section className='section'>
           <div className='columns'>
             <div className='column is-one-third is-offset-one-third'>
