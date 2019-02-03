@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import Carousel from '../common/Carousel';
+import Carousel from 'nuka-carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,12 +13,12 @@ export default class Home extends React.Component {
 				<Helmet>
 					<title>Home - A Deeper Love Marriage Retreat</title>
 				</Helmet>
-				<Carousel images={[
-            {src: 'https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2Fcouple-piggyback.jpg?1542489921589', alt:'Couple Piggyback'},
-            {src: 'https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2Fadult-adventure-baby.jpg?1542489922625', alt: 'Adventure & Baby'},
-            {src: 'https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FSpiritual-intimacy.png?1542491566701', alt: 'Spiritual Intimacy'},
-            {src: 'https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2Fanniversary.jpg?1542489922589', alt: 'Anniversary'}
-          ]} />
+				<Carousel autoplay wrapAround pauseOnHover={false} autoplayInterval={10000} initialSlideHeight={400}>
+            <img className='is-background' src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2Fcouple-piggyback.jpg?1542489921589' alt='Couple Piggyback' />
+            <img className='is-background' src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2Fadult-adventure-baby.jpg?1542489922625' alt='Adventure & Baby' />
+            <img className='is-background' src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FSpiritual-intimacy.png?1542491566701' alt='Spiritual Intimacy' />
+            <img className='is-background' src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2Fanniversary.jpg?1542489922589' alt='Anniversary' />
+        </Carousel>
         <section className='section'>
           <div className='columns'>
             <div className='column'/>

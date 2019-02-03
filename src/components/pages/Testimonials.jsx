@@ -16,7 +16,7 @@ export default class Testimonials extends React.Component {
           <div className='tile is-ancestor'>
             <div className='tile is-vertical is-12'>
               <div className='tile'>
-                <div className='tile is-parent is-vertical'>
+                <div className='tile is-parent is-vertical is-6'>
                   <article className='tile is-child notification' style={{backgroundColor:'hsl(221, 15%, 41%)'}}>
                     <p className='subtitle' style={{color:'#FFF'}}><FontAwesomeIcon icon={faQuoteLeft} alt='Quote Left' />&nbsp;For the first time in 4 years of marriage my husband & I chose to go on a marriage retreat. 
                     This retreat was life changing for us & taught us the importance of making this an annual occurance.  
