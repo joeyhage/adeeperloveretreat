@@ -9,9 +9,7 @@ export default class Events extends React.Component {
 				<Helmet>
 					<title>Registration - A Deeper Love Marriage Retreat</title>
 				</Helmet>
-        <section className='hero is-medium'>
-          <img className='is-background' src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FDeeperLoveRetreat.JPG?1543365322759' alt='A Deeper Love Retreat' />
-        </section>
+        <section className='hero is-medium has-bg-img'></section>
         <h1 className='title is-size-1-desktop is-size-3-touch has-text-centered'>Fall 2019 Retreat</h1>
         <section className='section' style={{marginRight:'15vw', marginLeft:'15vw'}}> 
             <p className='subtitle is-size-4-desktop is-size-4-touch has-text-centered'>
