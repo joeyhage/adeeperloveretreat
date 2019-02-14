@@ -22,6 +22,9 @@ export default class Footer extends React.Component {
               </Link>
             </h6>
             <p className='is-size-7 has-text-dark'>
+              Ames, IA
+            </p>
+            <p className='is-size-7 has-text-dark'>
               &copy; {new Date().getFullYear()}, <Link className='has-text-dark' to='/'>A Deeper Love Marriage Retreat</Link>
             </p>
           </div>

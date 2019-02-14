@@ -34,6 +34,7 @@ export default class ContactUs extends React.Component {
       <div className='container is-fluid'>
         <Helmet>
           <title>Contact Us - A Deeper Love Marriage Retreat</title>
+          <meta name='description' content='A Deeper Love Marriage Retreat - Ames, IA. Contact us to learn more!' />
         </Helmet>
         <h1 className='title has-text-centered is-size-1-desktop is-size-3-touch'>
             Contact Us
