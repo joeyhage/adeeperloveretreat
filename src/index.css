@@ -135,7 +135,10 @@ h1.title.is-size-1-desktop {
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
-
+#home-page div.slider img {
+  min-height: 100%;
+  object-fit: cover;
+}
 /* About Page */
 #about-page .tile.is-8 article {
   color: hsl(324,7%,95%);

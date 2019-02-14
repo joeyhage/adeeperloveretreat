@@ -6,7 +6,7 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
-import Events from './pages/Events';
+import Registration from './pages/Registration';
 import About from './pages/About';
 import Testimonials from './pages/Testimonials';
 
@@ -19,7 +19,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/registration' component={Events} />
+          <Route exact path='/registration' component={Registration} />
           <Route exact path='/testimonials' component={Testimonials} />
           <Route exact path='/contact-us' component={ContactUs} />
           <Redirect to='/' />
