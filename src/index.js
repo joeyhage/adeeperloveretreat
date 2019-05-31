@@ -1,18 +1,23 @@
-import 'core-js/es6/map';
-import 'core-js/es6/set';
-import 'core-js/fn/string/includes';
+import 'core-js/es/map';
+import 'core-js/es/set';
+import 'core-js/es/string/includes';
 import 'raf/polyfill';
 import 'react-app-polyfill/ie9';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import 'bulma/css/bulma.css';
+
 import App from './components/App';
 import './index.css';
+import { unregister } from './serviceWorker';
 
 ReactDOM.render(
-  <Router>
+  <BrowserRouter>
     <App />
-  </Router>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
+
+unregister();

@@ -47,6 +47,9 @@ class Header extends React.Component {
               <NavItem to='/about' location={this.props.location}>
 								About
 							</NavItem>
+              <NavItem to='/speakers' location={this.props.location}>
+								Speakers
+							</NavItem>
               <NavItem to='/registration' location={this.props.location}>
 								Registration
 							</NavItem>

@@ -11,7 +11,7 @@ export default class Home extends React.Component {
 		return (
 			<div id='home-page' className='has-background-white'>
 				<Helmet>
-					<title>Home - A Deeper Love Marriage Retreat</title>
+					<title>A Deeper Love Marriage Retreat</title>
           <meta name='description' content='A Deeper Love Marriage Retreat - Ames, IA. The next retreat is August 17th, 2019!' />
 				</Helmet>
 				<Carousel autoplay wrapAround pauseOnHover={false} autoplayInterval={10000} initialSlideHeight={400}>

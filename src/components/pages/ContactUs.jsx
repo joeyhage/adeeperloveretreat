@@ -48,7 +48,8 @@ export default class ContactUs extends React.Component {
                 </div>
                 <div className='message-body'>
                   Our apologies; an error occurred. Please contact us at&nbsp; 
-                  <a href='mailto:adeeperloveretreat@gmail.com?subject=A Deeper Love Marriage Retreat' target='_blank'>
+                  <a href='mailto:adeeperloveretreat@gmail.com?subject=A Deeper Love Marriage Retreat' target='_blank'
+                     rel='noopener noreferrer'>
                     adeeperloveretreat@gmail.com
                   </a>
                 </div>
