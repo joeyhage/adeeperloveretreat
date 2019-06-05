@@ -8,7 +8,7 @@ import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
 import Registration from './pages/Registration';
 import About from './pages/About';
-import Speakers from './pages/Speakers';
+import OurTeam from './pages/OurTeam';
 import Testimonials from './pages/Testimonials';
 
 class App extends React.Component {
@@ -20,7 +20,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/speakers' component={Speakers} />
+          <Route exact path='/our-team' component={OurTeam} />
           <Route exact path='/registration' component={Registration} />
           <Route exact path='/testimonials' component={Testimonials} />
           <Route exact path='/contact-us' component={ContactUs} />
@@ -32,7 +32,7 @@ class App extends React.Component {
   }
   
   componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
       window.scrollTo(0, 0);
     }
   }

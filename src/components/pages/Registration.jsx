@@ -13,12 +13,16 @@ export default class Registration extends React.Component {
         </Helmet>
         <section className='hero is-medium has-bg-img' />
         <h1 className='title is-size-1-desktop is-size-3-touch has-text-centered'>August 17th, 2019 Retreat</h1>
-        <section className='section' style={{ marginRight: '15vw', marginLeft: '15vw' }}>
-          <p className='subtitle is-size-4-desktop is-size-4-touch has-text-centered'>
-            Please stay tuned for further details.
-            <br /> We look forward to helping you find A Deeper Love in your marriage!
-          </p>
-        </section>
+        <div className='columns is-centered' style={{ minHeight: '1250px' }}>
+          <div className='column is-5'>
+            <iframe
+              style={{ height: '1250px' }}
+              title='A Deeper Love Marriage Retreat Registration'
+              src='https://docs.google.com/forms/d/e/1FAIpQLSciZyyoEvxHpVRstDKuYmF4dbn7MmAd4oE4jFu4Lxk5LaTRBg/viewform?embedded=true'
+              width='640' height='1250' marginWidth='0'>Loading...
+            </iframe>
+          </div>
+        </div>
       </div>
     );
   }

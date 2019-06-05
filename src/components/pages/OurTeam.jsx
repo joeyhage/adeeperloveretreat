@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
-class Speakers extends Component {
+class OurTeam extends Component {
 
   render() {
     return (
       <div id='speakers-page' className='has-background-white'>
         <Helmet>
-          <title>Speakers - A Deeper Love Marriage Retreat</title>
+          <title>Our Team - A Deeper Love Marriage Retreat</title>
         </Helmet>
-        <h1 className='title has-text-centered is-size-1-desktop is-size-3-touch'>Speakers</h1>
         <div className='container'>
+          <h1 className='title has-text-centered is-size-1-desktop is-size-3-touch'>Speakers</h1>
           <div className='tile is-ancestor'>
             <div className='tile is-12'>
               <div className='tile is-parent is-4'>
@@ -45,8 +45,9 @@ class Speakers extends Component {
               </div>
               <div className='tile is-parent is-4'>
                 <article className='tile is-child notification' style={{ backgroundColor: 'hsl(324,7%,41%)' }}>
-                  <img src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FFB_IMG_1557852950179.jpg?1559270096046'
-                       alt='Pat and Mindy Stahr' />
+                  <img
+                    src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FFB_IMG_1557852950179.jpg?1559270096046'
+                    alt='Pat and Mindy Stahr' />
                   <p className='heading is-uppercase is-size-5 has-text-weight-bold has-text-white has-text-centered'>
                     Pat &amp; Mindy Stahr
                   </p>
@@ -64,10 +65,32 @@ class Speakers extends Component {
               </div>
             </div>
           </div>
+          <div className='container'>
+            <h1 className='title has-text-centered is-size-1-desktop is-size-3-touch'>Priest</h1>
+            <div className='tile is-ancestor is-centered'>
+              <div className='tile is-12'>
+                <div className='tile is-parent is-4'>
+                  <article className='tile is-child notification' style={{ backgroundColor: 'hsl(324,7%,41%)' }}>
+                    <img
+                      src='https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FFr%20Andrew.png'
+                      alt='Fr. Andrew Windschitl' />
+                    <p
+                      className='heading is-uppercase is-size-5 has-text-weight-bold has-text-white has-text-centered'>
+                      Fr. Andrew Windschitl
+                    </p>
+                    <p className='subtitle has-text-white has-text-centered'>
+                      Ordained in 2015 for the Diocese of Des Moines, Fr. Andrew currently serves as the pastor of
+                      St. Mary-Holy Cross Parish in North Polk County. In addition to parish and other miscellaneous
+                      duties, he is the spiritual advisor for Iowa Catholic Radio.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default Speakers;
+export default OurTeam;
