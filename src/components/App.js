@@ -6,13 +6,13 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
-import Registration from './pages/Registration';
+import Event from './pages/Event';
 import About from './pages/About';
 import OurTeam from './pages/OurTeam';
 import Testimonials from './pages/Testimonials';
 
 class App extends React.Component {
-  
+
   render() {
     return (
       <React.Fragment>
@@ -21,7 +21,8 @@ class App extends React.Component {
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/our-team' component={OurTeam} />
-          <Route exact path='/registration' component={Registration} />
+          <Route exact path='/event' component={Event} />
+          <Redirect exact from='/registration' to='/event' />
           <Route exact path='/testimonials' component={Testimonials} />
           <Route exact path='/contact-us' component={ContactUs} />
           <Redirect to='/' />
@@ -30,7 +31,7 @@ class App extends React.Component {
       </React.Fragment>
     );
   }
-  
+
   componentDidUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
       window.scrollTo(0, 0);

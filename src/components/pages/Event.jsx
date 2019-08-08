@@ -2,20 +2,20 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-export default class Registration extends React.Component {
+export default class Event extends React.Component {
 
   render() {
     return (
       <div id='events-page' className='has-background-white'>
         <Helmet>
-          <title>Registration - A Deeper Love Marriage Retreat</title>
+          <title>Event - A Deeper Love Marriage Retreat</title>
           <meta name='description'
-                content='Registration - A Deeper Love Marriage Retreat. The next retreat is August 17th, 2019!' />
+                content='Event - A Deeper Love Marriage Retreat. The next retreat is August 17th, 2019!' />
         </Helmet>
         <section className='hero is-medium has-bg-img' />
         <h1 className='title is-size-1-desktop is-size-3-touch has-text-centered'>August 17th, 2019 Retreat</h1>
         <div className='columns is-centered' style={{ minHeight: '1250px' }}>
-          <div className='column is-4'>
+          <div className='column is-6'>
             <div className='tile is-ancestor'>
               <div className='tile is-vertical is-12'>
                 <div className='tile'>
@@ -82,14 +82,14 @@ export default class Registration extends React.Component {
               </div>
             </div>
           </div>
-          <div className='column is-narrow'>
-            <iframe
-              style={{ height: '1350px' }}
-              title='A Deeper Love Marriage Retreat Registration'
-              src='https://docs.google.com/forms/d/e/1FAIpQLSciZyyoEvxHpVRstDKuYmF4dbn7MmAd4oE4jFu4Lxk5LaTRBg/viewform?embedded=true'
-              width='640' height='1350' marginWidth='0'>Loading...
-            </iframe>
-          </div>
+          {/*<div className='column is-narrow'>*/}
+          {/*  <iframe*/}
+          {/*    style={{ height: '1350px' }}*/}
+          {/*    title='A Deeper Love Marriage Retreat Registration'*/}
+          {/*    src='https://docs.google.com/forms/d/e/1FAIpQLSciZyyoEvxHpVRstDKuYmF4dbn7MmAd4oE4jFu4Lxk5LaTRBg/viewform?embedded=true'*/}
+          {/*    width='640' height='1350' marginWidth='0'>Loading...*/}
+          {/*  </iframe>*/}
+          {/*</div>*/}
         </div>
       </div>
     );
