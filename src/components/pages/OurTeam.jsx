@@ -5,7 +5,7 @@ class OurTeam extends Component {
 
   render() {
     return (
-      <div id='speakers-page' className='has-background-white'>
+      <div id='our-team-page' className='has-background-white'>
         <Helmet>
           <title>Our Team - A Deeper Love Marriage Retreat</title>
         </Helmet>

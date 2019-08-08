@@ -39,7 +39,8 @@ html {
     height: 300px !important;
     overflow: hidden;
   }
-  #about-page div.container, #speakers-page div.container, #testimonials-page div.container {
+
+  #about-page div.container, #our-team-page div.container, #testimonials-page div.container {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
@@ -68,6 +69,10 @@ html {
 
   #home-page .slider-slide > img {
     margin: -12% 0;
+  }
+
+  #home-page #retreat-details {
+    margin-top: 6rem;
   }
 }
 /* General */
@@ -152,19 +157,26 @@ h1.title.is-size-1-desktop {
   min-height: 100%;
   object-fit: cover;
 }
+#home-page p a {
+  color: hsl(346, 21%, 75%);
+  font-weight: 600;
+}
+#home-page p a:hover {
+  text-decoration: underline;
+}
 /* About Page */
 #about-page .tile.is-8 article {
   color: hsl(324, 7%, 95%);
 }
 
 /* Speakers Page */
-#speakers-page img {
+#our-team-page img {
   width: 10em;
   border-radius: 50%;
   display: flex;
   margin: 1em auto;
 }
-#speakers-page article.tile {
+#our-team-page article.tile {
   border-radius: 4px;
   position: relative;
   padding: 1.25rem 1.75rem 1.5rem 1.75rem;
@@ -178,6 +190,21 @@ h1.title.is-size-1-desktop {
 .has-bg-img {
   background: url('https://cdn.glitch.com/b8ab5d72-f094-4be6-b779-eb4ed16e6d67%2FDeeperLoveRetreat.JPG?1543365322759') center center;
   background-size: cover;
+}
+#events-page .tile article {
+  color: hsl(324, 7%, 95%);
+}
+#events-page article.tile li:nth-of-type(1) {
+  margin-bottom: 2vh;
+}
+#events-page article.tile li:nth-of-type(n + 2) {
+  margin: 2vh 0;
+}
+#events-page article.tile li {
+  font-weight: 600;
+}
+#events-page article.tile div.subtitle {
+  padding: 2vh;
 }
 
 /* ContactUs */

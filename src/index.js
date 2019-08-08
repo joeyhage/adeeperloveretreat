@@ -1,6 +1,6 @@
 import 'core-js/es/map';
 import 'core-js/es/set';
-import 'core-js/es/string/includes';
+import 'core-js/features/string/includes';
 import 'raf/polyfill';
 import 'react-app-polyfill/ie9';
 
