@@ -21,7 +21,7 @@
     "react-text-mask": "^5.4.3"
   },
   "devDependencies": {
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^5.0.1"
   },
   "engines": {
     "node": "8.x"
